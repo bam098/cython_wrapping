@@ -1,0 +1,10 @@
+# C/C++ object and library files
+01_simple_c_wrapper/lib/*.o
+01_simple_c_wrapper/lib/*.a
+02_simple_cpp_wrapper/lib/*.o
+02_simple_cpp_wrapper/lib/*.a
+
+# Cython library and cpp files
+01_simple_c_wrapper/*.so
+02_simple_cpp_wrapper/*.so
+02_simple_cpp_wrapper/*.cpp
