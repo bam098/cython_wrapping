@@ -2,6 +2,11 @@
 
 To build the wrapper:
 
-1. cd lib && make && cd ..
-2. make
-3. python test.py
+1. Build C++ library<br>
+   <code>cd lib && make && cd ..</code>
+
+2. Build Python module using Cython<br>
+   <code>make</code>
+   
+3. Test Python module<br>
+   <code>python test.py</code>
