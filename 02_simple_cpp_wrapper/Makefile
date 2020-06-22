@@ -9,4 +9,4 @@ $(LIB_DIR)/libhello.a:
 	make -C $(LIB_DIR) libhello.a
 
 clean:
-	rm *.so
+	rm *.cpp *.so
