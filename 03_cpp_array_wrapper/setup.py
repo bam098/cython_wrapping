@@ -15,5 +15,8 @@ calculate_extension = Extension(
 
 setup(
     name="pyhello",
-    ext_modules=cythonize(calculate_extension)
+    ext_modules=cythonize(
+        calculate_extension,
+        compiler_directives={'language_level': "3"}
+    )
 )

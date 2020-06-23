@@ -15,5 +15,8 @@ vector_extension = Extension(
 
 setup(
     name="pyvector",
-    ext_modules=cythonize(vector_extension)
+    ext_modules=cythonize(
+        vector_extension,
+        compiler_directives={'language_level': "3"}
+    )
 )
