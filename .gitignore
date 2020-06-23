@@ -7,9 +7,12 @@
 03_cpp_array_wrapper/lib/*.a
 04_cpp_class_wrapper/lib/*.o
 04_cpp_class_wrapper/lib/*.a
+05_cpp_multiclass_wrapper/lib/*.o
+05_cpp_multiclass_wrapper/lib/*.a
 
 # Cython library and cpp files
 01_simple_c_wrapper/*.so
 02_simple_cpp_wrapper/*.so
 03_cpp_array_wrapper/*.so
 04_cpp_class_wrapper/*.so
+05_cpp_multiclass_wrapper/*.so
