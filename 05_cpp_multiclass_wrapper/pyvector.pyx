@@ -17,13 +17,13 @@ cdef extern from "Multiplier.hpp":
 cdef class PyMultiplier:
     cdef Multiplier *thisptr
 
-    def __cinit__(self, k):
+    def __cinit__(self, k: np.double) -> None:
         self.thisptr = new Multiplier(k)
 
-    def __dealloc__(self):
+    def __dealloc__(self) -> None:
         del self.thisptr
 
-    def multiply(self, data):
+    def multiply(self, data: np.ndarray[np.double]) -> np.ndarray[np.double]:
         if not data.flags['C_CONTIGUOUS']:
             data = np.ascontiguousarray(data)
 

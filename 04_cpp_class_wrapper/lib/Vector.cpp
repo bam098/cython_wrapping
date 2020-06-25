@@ -1,8 +1,8 @@
 #include "Vector.hpp"
 
-Vector::Vector(double* data, unsigned int length) {
-    _data = data;
-    _length = length;
+Vector::Vector(double* array, unsigned int array_length) {
+    _data = array;
+    _length = array_length;
 }
 
 Vector::~Vector() { } 
@@ -24,8 +24,8 @@ double* Vector::get_data() {
     return _data;
 }
 
-void Vector::multiply(const double k) {
+void Vector::multiply(const double multiplier) {
     for (int i = 0; i < _length; ++i) {
-        _data[i] *= k;
+        _data[i] *= multiplier;
     }
 }

@@ -1,4 +1,4 @@
 import pyhello
 
 if __name__ == '__main__':
-    pyhello.py_hello(b"world")
+    pyhello.py_hello("world")

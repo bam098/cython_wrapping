@@ -1,7 +1,7 @@
 #include "calculate.hpp"
 
-void multiply(double* array, const double k, const unsigned int n) {
-    for (int i = 0; i < n; ++i) {
-        array[i] *= k;
+void multiply(double* array, const unsigned int array_length, const double multiplier) {
+    for (int i = 0; i < array_length; ++i) {
+        array[i] *= multiplier;
     }
 }

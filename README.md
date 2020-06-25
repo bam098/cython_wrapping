@@ -10,9 +10,17 @@ Cython, [Cython on PyPi](https://pypi.org/project/Cython/)
 
 Wrapping a function in C that takes a string and prints that string on the console.
 
-*Reference:* [Wrapping C libraries with Cython](https://stavshamir.github.io/python/making-your-c-library-callable-from-python-by-wrapping-it-with-cython/)
+*References:*
+
+- [Wrapping C libraries with Cython](https://stavshamir.github.io/python/making-your-c-library-callable-from-python-by-wrapping-it-with-cython/)
+- [Convert str to bytes](https://mkyong.com/python/python-3-convert-string-to-bytes/)
 
 ## 02 Simple C++ Wrapper
+
+*References:*
+
+- [Wrapping C libraries with Cython](https://stavshamir.github.io/python/making-your-c-library-callable-from-python-by-wrapping-it-with-cython/)
+- [Convert str to bytes](https://mkyong.com/python/python-3-convert-string-to-bytes/)
 
 Wrapping a function in C++ that takes a string and prints that string on the console.
 
