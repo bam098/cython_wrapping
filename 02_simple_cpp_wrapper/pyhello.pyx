@@ -1,5 +1,3 @@
-# distutils: language = c++
-
 from libcpp.string cimport string
 
 cdef extern from "hello.hpp":

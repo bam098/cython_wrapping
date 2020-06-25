@@ -1,5 +1,3 @@
-# distutils: language = c++
-
 import numpy as np
 
 cdef extern from "calculate.hpp":

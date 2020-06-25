@@ -1,5 +1,3 @@
-# distutils: language = c++
-
 from cython cimport view
 import numpy as np
 
