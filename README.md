@@ -17,12 +17,12 @@ Wrapping a function in C that takes a string and prints that string on the conso
 
 ## 02 Simple C++ Wrapper
 
+Wrapping a function in C++ that takes a string and prints that string on the console.
+
 *References:*
 
 - [Wrapping C libraries with Cython](https://stavshamir.github.io/python/making-your-c-library-callable-from-python-by-wrapping-it-with-cython/)
 - [Convert str to bytes](https://mkyong.com/python/python-3-convert-string-to-bytes/)
-
-Wrapping a function in C++ that takes a string and prints that string on the console.
 
 ## 03 C++ Array Wrapper
 
