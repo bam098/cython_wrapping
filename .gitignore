@@ -1,3 +1,6 @@
+# MacOSX specific files
+.DS_Store
+
 # C/C++ object and library files
 01_simple_c_wrapper/lib/*.o
 01_simple_c_wrapper/lib/*.a
