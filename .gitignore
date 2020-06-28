@@ -1,5 +1,6 @@
-# MacOSX specific files
+# MacOSX and VSCode specific files
 .DS_Store
+.vscode/
 
 # C/C++ object and library files
 01_simple_c_wrapper/lib/*.o
@@ -12,6 +13,8 @@
 04_cpp_class_wrapper/lib/*.a
 05_cpp_multiclass_wrapper/lib/*.o
 05_cpp_multiclass_wrapper/lib/*.a
+06_wrapper_package/pymath/lib/*.o
+06_wrapper_package/pymath/lib/*.a
 
 # Cython library and cpp files
 01_simple_c_wrapper/*.so
@@ -19,3 +22,11 @@
 03_cpp_array_wrapper/*.so
 04_cpp_class_wrapper/*.so
 05_cpp_multiclass_wrapper/*.so
+06_wrapper_package/pymath/*.so
+
+# Python cache files
+06_wrapper_package/pymath/__pycache__
+
+# Python package specific files
+06_wrapper_package/dist
+06_wrapper_package/pymath.egg-info
