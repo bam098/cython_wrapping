@@ -77,6 +77,7 @@ that wraps a C++ class. The package can be installed using pip.
 
 *ToDo:*
 
+- Make Cython dependency of created package optional
 - Add automated tests
 - Add third-party libraries
 
