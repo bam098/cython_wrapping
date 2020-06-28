@@ -1,6 +1,6 @@
 # Wrapper Package
 
-To build the wrapper:
+To build the package:
 
 1. Build C++ library<br>
     <code>cd pymath/lib</code><br>
