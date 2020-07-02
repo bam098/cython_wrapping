@@ -28,5 +28,5 @@ To build the package:
    <code>conda deactivate</code><br>
    <code>conda activate wrapper</code><br>
 
-This has been tested for MacOS 10.9. If another MacOS version is used, the environment variable 
+If another MacOS version than 10.9 is used, the environment variable 
 <code>MACOSX_DEPLOYMENT_TARGET</code> need to be adapted to the used version.

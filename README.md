@@ -18,6 +18,8 @@ A collection of examples to wrap C++-Code using Cython to be able to use it with
 3. Go to one of the subdirectories (e.g. <code>01_simple_c_wrapper</code>) and follow the steps 
    there (stay in the <code>wrapper</code> virtual environment).<br>
 
+The code has been tested on MacOS (10.9) and Linux (Ubuntu 18.04 LTS).
+
 ## 01 Simple C Wrapper
 
 Wrapping a function in C that takes a string and prints that string on the console.
