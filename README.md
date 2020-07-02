@@ -5,7 +5,7 @@ A collection of examples to wrap C++-Code using Cython to be able to use it with
 ## Prerequisites
 
 1. Create a virtual Python environment (e.g. using [conda](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/index.html))<br>
-    <code>conda create -n wrapper Python==3.7</code><br>
+    <code>conda create -n wrapper Python=3.7</code><br>
 
 2. Inside the created environment install the required packages<br>
    <code>conda activate wrapper</code><br>
