@@ -1,6 +1,9 @@
 LIB_DIR = pymath/lib
 
-export MACOSX_DEPLOYMENT_TARGET=10.9
+UNAME_S := $(shell uname -s)
+ifeq ($(UNAME_S),Darwin)
+	export MACOSX_DEPLOYMENT_TARGET=10.9
+endif
 
 default: pymath
 
