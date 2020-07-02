@@ -110,3 +110,4 @@ that wraps a C++ class. The package can be installed using pip.
 - [sys.platform](https://docs.python.org/3/library/sys.html#sys.platform)
 - [GCC -fPIC option](https://stackoverflow.com/questions/5311515/gcc-fpic-option)
 - [cc1plus: warning: command line option “-Wstrict-prototypes” is valid for Ada/C/ObjC but not for C++](https://stackoverflow.com/questions/8106258/cc1plus-warning-command-line-option-wstrict-prototypes-is-valid-for-ada-c-o)
+- [OS detecting makefile](https://stackoverflow.com/questions/714100/os-detecting-makefile)
