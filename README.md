@@ -35,6 +35,10 @@ Wrapping a function in C++ that takes a string and prints that string on the con
 
 - [Wrapping C libraries with Cython](https://stavshamir.github.io/python/making-your-c-library-callable-from-python-by-wrapping-it-with-cython/)
 - [Convert str to bytes](https://mkyong.com/python/python-3-convert-string-to-bytes/)
+- [How do I check the operating system in Python?](https://stackoverflow.com/questions/8220108/how-do-i-check-the-operating-system-in-python)
+- [sys.platform](https://docs.python.org/3/library/sys.html#sys.platform)
+- [GCC -fPIC option](https://stackoverflow.com/questions/5311515/gcc-fpic-option)
+- [cc1plus: warning: command line option “-Wstrict-prototypes” is valid for Ada/C/ObjC but not for C++](https://stackoverflow.com/questions/8106258/cc1plus-warning-command-line-option-wstrict-prototypes-is-valid-for-ada-c-o)
 
 ## 03 C++ Array Wrapper
 
@@ -45,6 +49,10 @@ element of the array.
 
 - [MemoryViews in Cython](https://cython.readthedocs.io/en/latest/src/userguide/memoryviews.html)
 - [Numpy in Cython](https://cython.readthedocs.io/en/latest/src/userguide/numpy_tutorial.html)
+- [How do I check the operating system in Python?](https://stackoverflow.com/questions/8220108/how-do-i-check-the-operating-system-in-python)
+- [sys.platform](https://docs.python.org/3/library/sys.html#sys.platform)
+- [GCC -fPIC option](https://stackoverflow.com/questions/5311515/gcc-fpic-option)
+- [cc1plus: warning: command line option “-Wstrict-prototypes” is valid for Ada/C/ObjC but not for C++](https://stackoverflow.com/questions/8106258/cc1plus-warning-command-line-option-wstrict-prototypes-is-valid-for-ada-c-o)
 
 ## 04 C++ Class Wrapper
 
@@ -58,6 +66,10 @@ a constant).
 - [From C++ to Numpy (old?)](http://gael-varoquaux.info/programming/cython-example-of-exposing-c-computed-arrays-in-python-without-data-copies.html)
 - [MemoryViews in Cython](http://docs.cython.org/en/latest/src/userguide/memoryviews.html)
 - [C++ in Cython](https://cython.readthedocs.io/en/latest/src/userguide/wrapping_CPlusPlus.html)
+- [How do I check the operating system in Python?](https://stackoverflow.com/questions/8220108/how-do-i-check-the-operating-system-in-python)
+- [sys.platform](https://docs.python.org/3/library/sys.html#sys.platform)
+- [GCC -fPIC option](https://stackoverflow.com/questions/5311515/gcc-fpic-option)
+- [cc1plus: warning: command line option “-Wstrict-prototypes” is valid for Ada/C/ObjC but not for C++](https://stackoverflow.com/questions/8106258/cc1plus-warning-command-line-option-wstrict-prototypes-is-valid-for-ada-c-o)
 
 ## 05 C++ MultiClass Wrapper
 
@@ -69,6 +81,10 @@ and multiplies each element of the vector class by the constant.
 
 - [C++ in Cython](https://cython.readthedocs.io/en/latest/src/userguide/wrapping_CPlusPlus.html)
 - [Nullary Constructor](https://stackoverflow.com/questions/55086112/initialize-class-with-only-one-static-method-no-constructor)
+- [How do I check the operating system in Python?](https://stackoverflow.com/questions/8220108/how-do-i-check-the-operating-system-in-python)
+- [sys.platform](https://docs.python.org/3/library/sys.html#sys.platform)
+- [GCC -fPIC option](https://stackoverflow.com/questions/5311515/gcc-fpic-option)
+- [cc1plus: warning: command line option “-Wstrict-prototypes” is valid for Ada/C/ObjC but not for C++](https://stackoverflow.com/questions/8106258/cc1plus-warning-command-line-option-wstrict-prototypes-is-valid-for-ada-c-o)
 
 ## 06 Wrapper Package
 
@@ -90,3 +106,7 @@ that wraps a C++ class. The package can be installed using pip.
 - [How do I install a Python package with a .whl file?](https://stackoverflow.com/questions/27885397/how-do-i-install-a-python-package-with-a-whl-file?rq=1)
 - [Install dependencies from setup.py](https://stackoverflow.com/questions/26900328/install-dependencies-from-setup-py)
 - [install_requires vs requirements files](https://packaging.python.org/discussions/install-requires-vs-requirements/)
+- [How do I check the operating system in Python?](https://stackoverflow.com/questions/8220108/how-do-i-check-the-operating-system-in-python)
+- [sys.platform](https://docs.python.org/3/library/sys.html#sys.platform)
+- [GCC -fPIC option](https://stackoverflow.com/questions/5311515/gcc-fpic-option)
+- [cc1plus: warning: command line option “-Wstrict-prototypes” is valid for Ada/C/ObjC but not for C++](https://stackoverflow.com/questions/8106258/cc1plus-warning-command-line-option-wstrict-prototypes-is-valid-for-ada-c-o)
