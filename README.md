@@ -112,3 +112,5 @@ that wraps a C++ class. The package can be installed using pip.
 - [GCC -fPIC option](https://stackoverflow.com/questions/5311515/gcc-fpic-option)
 - [cc1plus: warning: command line option “-Wstrict-prototypes” is valid for Ada/C/ObjC but not for C++](https://stackoverflow.com/questions/8106258/cc1plus-warning-command-line-option-wstrict-prototypes-is-valid-for-ada-c-o)
 - [OS detecting makefile](https://stackoverflow.com/questions/714100/os-detecting-makefile)
+- [Getting Started With Testing in Python](https://realpython.com/python-testing/)
+- [Best way to assert for numpy.array equality?](https://stackoverflow.com/questions/3302949/best-way-to-assert-for-numpy-array-equality)
