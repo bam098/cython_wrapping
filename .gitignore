@@ -26,6 +26,7 @@
 
 # Python cache files
 06_wrapper_package/pymath/__pycache__
+06_wrapper_package/tests/__pycache__
 
 # Python package specific files
 06_wrapper_package/dist

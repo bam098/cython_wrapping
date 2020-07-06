@@ -15,7 +15,7 @@ A collection of examples to wrap C++-Code using Cython to be able to use it with
    <code>pip install setuptools</code><br>
    <code>pip install wheel</code><br>
 
-3. Go to one of the subdirectories (e.g. <code>01_simple_c_wrapper</code>) and follow the steps 
+3. Go to one of the subdirectories (e.g. <code>01_simple_c_wrapper</code>) and follow the steps
    there (stay in the <code>wrapper</code> virtual environment).<br>
 
 The code has been tested on MacOS (10.9) and Linux (Ubuntu 18.04 LTS).
@@ -96,7 +96,6 @@ that wraps a C++ class. The package can be installed using pip.
 *ToDo:*
 
 - Make Cython dependency of created package optional
-- Add automated tests
 - Add third-party libraries
 
 *References:*

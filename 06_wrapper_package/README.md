@@ -20,13 +20,12 @@ To build the package:
    <code>pip install dist/pymath-0.0.1-cp37-cp37m-macosx_10_9_x86_64.whl</code> *(name of <code>.whl</code> file can differ)*<br>
 
 4. Test installed <code>pymath</code> package<br>
-   <code>cd tests</code><br>
-   <code>python test.py</code><br>
+   <code>python -m unittest discover -s tests</code><br>
 
 5. Go back to <code>wrapper</code> virtual environment *(optional)*<br>
    <code>cd -</code><br>
    <code>conda deactivate</code><br>
    <code>conda activate wrapper</code><br>
 
-If another MacOS version than 10.9 is used, the environment variable 
+If another MacOS version than 10.9 is used, the environment variable
 <code>MACOSX_DEPLOYMENT_TARGET</code> need to be adapted to the used version.
