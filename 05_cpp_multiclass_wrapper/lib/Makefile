@@ -1,8 +1,8 @@
 CC = g++
 
-default: libvector.a
+default: libmultiply.a
 
-libvector.a: Vector.o Multiplier.o
+libmultiply.a: Vector.o Multiplier.o
 	ar rcs $@ $^
 
 Vector.o: Vector.cpp Vector.hpp

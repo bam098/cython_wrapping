@@ -12,13 +12,14 @@ cdef extern from "Vector.hpp":
 
 cdef class PyVector:
     cdef Vector *thisptr
+    cdef double[::1] data_memview
 
     def __cinit__(self, data: np.ndarray[np.double]) -> None:
         if not data.flags['C_CONTIGUOUS']:
             data = np.ascontiguousarray(data)
 
-        cdef double[::1] data_memview = data
-        self.thisptr = new Vector(&data_memview[0], data_memview.shape[0])
+        self.data_memview = np.array(data, copy=True)
+        self.thisptr = new Vector(&self.data_memview[0], self.data_memview.shape[0])
 
     def __dealloc__(self) -> None:
         del self.thisptr

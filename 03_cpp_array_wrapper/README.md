@@ -13,4 +13,4 @@ To build the wrapper:
    <code>make</code>
 
 3. Test Python module<br>
-   <code>python test.py</code>
+   <code>nose2</code>

@@ -10,10 +10,7 @@ A collection of examples to wrap C++-Code using Cython to be able to use it with
 2. Inside the created environment install the required packages<br>
    <code>conda activate wrapper</code><br>
    <code>conda install -c anaconda pip</code><br>
-   <code>pip install cython</code><br>
-   <code>pip install numpy</code><br>
-   <code>pip install setuptools</code><br>
-   <code>pip install wheel</code><br>
+   <code>pip install -r requirements.txt</code><br>
 
 3. Go to one of the subdirectories (e.g. <code>01_simple_c_wrapper</code>) and follow the steps
    there (stay in the <code>wrapper</code> virtual environment).<br>
@@ -57,6 +54,9 @@ element of the array.
 - [cc1plus: warning: command line option “-Wstrict-prototypes” is valid for Ada/C/ObjC but not for C++](https://stackoverflow.com/questions/8106258/cc1plus-warning-command-line-option-wstrict-prototypes-is-valid-for-ada-c-o)
 - [Best way to convert numpy array to C++ vector?](https://groups.google.com/forum/#!topic/cython-users/sqeY7GO3U7k)
 - [How to initialize std::vector from C-style array?](https://stackoverflow.com/questions/2434196/how-to-initialize-stdvector-from-c-style-array)
+- [Getting Started With Testing in Python](https://realpython.com/python-testing/)
+- [Best way to assert for numpy.array equality?](https://stackoverflow.com/questions/3302949/best-way-to-assert-for-numpy-array-equality)
+- [Python test to check instance type](https://stackoverflow.com/questions/33657463/python-test-to-check-instance-type)
 
 ## 04 C++ Class Wrapper
 
@@ -74,6 +74,9 @@ a constant).
 - [sys.platform](https://docs.python.org/3/library/sys.html#sys.platform)
 - [GCC -fPIC option](https://stackoverflow.com/questions/5311515/gcc-fpic-option)
 - [cc1plus: warning: command line option “-Wstrict-prototypes” is valid for Ada/C/ObjC but not for C++](https://stackoverflow.com/questions/8106258/cc1plus-warning-command-line-option-wstrict-prototypes-is-valid-for-ada-c-o)
+- [Getting Started With Testing in Python](https://realpython.com/python-testing/)
+- [Best way to assert for numpy.array equality?](https://stackoverflow.com/questions/3302949/best-way-to-assert-for-numpy-array-equality)
+- [Python test to check instance type](https://stackoverflow.com/questions/33657463/python-test-to-check-instance-type)
 
 ## 05 C++ MultiClass Wrapper
 

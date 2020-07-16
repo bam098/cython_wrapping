@@ -20,7 +20,7 @@ To build the package:
    <code>pip install dist/pymath-0.0.1-cp37-cp37m-macosx_10_9_x86_64.whl</code> *(name of <code>.whl</code> file can differ)*<br>
 
 4. Test installed <code>pymath</code> package<br>
-   <code>python -m unittest discover -s tests</code><br>
+   <code>nose2</code><br>
 
 5. Go back to <code>wrapper</code> virtual environment *(optional)*<br>
    <code>cd -</code><br>

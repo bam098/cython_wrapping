@@ -25,6 +25,9 @@
 06_wrapper_package/pymath/*.so
 
 # Python cache files
+03_cpp_array_wrapper/__pycache__/
+04_cpp_class_wrapper/__pycache__/
+05_cpp_multiclass_wrapper/__pycache__/
 06_wrapper_package/pymath/__pycache__
 06_wrapper_package/tests/__pycache__
 

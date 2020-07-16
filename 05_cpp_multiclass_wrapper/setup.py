@@ -18,9 +18,9 @@ elif platform == "darwin":
     link_args.append("-stdlib=libc++")
 
 vector_extension = Extension(
-    name="pyvector",
-    sources=["pyvector.pyx"],
-    libraries=["vector"],
+    name="pymultiply",
+    sources=["pymultiply.pyx"],
+    libraries=["multiply"],
     library_dirs=["lib"],
     include_dirs=["lib"],
     language="c++",
@@ -29,7 +29,7 @@ vector_extension = Extension(
 )
 
 setup(
-    name="pyvector",
+    name="pymultiply",
     ext_modules=cythonize(
         vector_extension,
         compiler_directives={'language_level': "3"}
