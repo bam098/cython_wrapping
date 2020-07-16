@@ -3,7 +3,7 @@ from pymath.pyvector import PyVector
 import numpy as np
 
 
-class TestKeypointFinder(unittest.TestCase):
+class TestPyVector(unittest.TestCase):
 
     def setUp(self):
         self.test_pyvector = PyVector(

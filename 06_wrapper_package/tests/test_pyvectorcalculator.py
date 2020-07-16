@@ -4,7 +4,7 @@ from pymath.pyvector import PyVector
 import numpy as np
 
 
-class TestKeypointFinder(unittest.TestCase):
+class TestPyVectorCalculator(unittest.TestCase):
 
     def setUp(self):
         test_pyvector1 = PyVector(np.array([1, 3, 5, 7, 9], dtype=np.double))
