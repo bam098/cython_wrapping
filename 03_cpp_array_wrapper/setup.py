@@ -4,7 +4,7 @@ import distutils.sysconfig
 from Cython.Build import cythonize
 from sys import platform
 
-compile_args = ["-std=c++11"]
+compile_args = ["-std=c++17"]
 link_args = []
 
 if platform == "linux":

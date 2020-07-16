@@ -55,6 +55,8 @@ element of the array.
 - [sys.platform](https://docs.python.org/3/library/sys.html#sys.platform)
 - [GCC -fPIC option](https://stackoverflow.com/questions/5311515/gcc-fpic-option)
 - [cc1plus: warning: command line option “-Wstrict-prototypes” is valid for Ada/C/ObjC but not for C++](https://stackoverflow.com/questions/8106258/cc1plus-warning-command-line-option-wstrict-prototypes-is-valid-for-ada-c-o)
+- [Best way to convert numpy array to C++ vector?](https://groups.google.com/forum/#!topic/cython-users/sqeY7GO3U7k)
+- [How to initialize std::vector from C-style array?](https://stackoverflow.com/questions/2434196/how-to-initialize-stdvector-from-c-style-array)
 
 ## 04 C++ Class Wrapper
 

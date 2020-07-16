@@ -6,7 +6,7 @@ libcalculate.a: calculate.o
 	ar rcs $@ $^
 
 calculate.o: calculate.cpp calculate.hpp
-	$(CC) -c $< -fPIC
+	$(CC) -std=c++17 -c $< -fPIC
 
 clean:
 	rm *.o *.a
