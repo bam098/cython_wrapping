@@ -57,6 +57,7 @@ element of the array.
 - [Getting Started With Testing in Python](https://realpython.com/python-testing/)
 - [Best way to assert for numpy.array equality?](https://stackoverflow.com/questions/3302949/best-way-to-assert-for-numpy-array-equality)
 - [Python test to check instance type](https://stackoverflow.com/questions/33657463/python-test-to-check-instance-type)
+- [Using nose2](https://docs.nose2.io/en/latest/usage.html)
 
 ## 04 C++ Class Wrapper
 
@@ -77,6 +78,7 @@ a constant).
 - [Getting Started With Testing in Python](https://realpython.com/python-testing/)
 - [Best way to assert for numpy.array equality?](https://stackoverflow.com/questions/3302949/best-way-to-assert-for-numpy-array-equality)
 - [Python test to check instance type](https://stackoverflow.com/questions/33657463/python-test-to-check-instance-type)
+- [Using nose2](https://docs.nose2.io/en/latest/usage.html)
 
 ## 05 C++ MultiClass Wrapper
 
@@ -92,6 +94,10 @@ and multiplies each element of the vector class by the constant.
 - [sys.platform](https://docs.python.org/3/library/sys.html#sys.platform)
 - [GCC -fPIC option](https://stackoverflow.com/questions/5311515/gcc-fpic-option)
 - [cc1plus: warning: command line option “-Wstrict-prototypes” is valid for Ada/C/ObjC but not for C++](https://stackoverflow.com/questions/8106258/cc1plus-warning-command-line-option-wstrict-prototypes-is-valid-for-ada-c-o)
+- [Getting Started With Testing in Python](https://realpython.com/python-testing/)
+- [Best way to assert for numpy.array equality?](https://stackoverflow.com/questions/3302949/best-way-to-assert-for-numpy-array-equality)
+- [Python test to check instance type](https://stackoverflow.com/questions/33657463/python-test-to-check-instance-type)
+- [Using nose2](https://docs.nose2.io/en/latest/usage.html)
 
 ## 06 Wrapper Package
 
@@ -119,3 +125,7 @@ that wraps a C++ class. The package can be installed using pip.
 - [OS detecting makefile](https://stackoverflow.com/questions/714100/os-detecting-makefile)
 - [Getting Started With Testing in Python](https://realpython.com/python-testing/)
 - [Best way to assert for numpy.array equality?](https://stackoverflow.com/questions/3302949/best-way-to-assert-for-numpy-array-equality)
+- [Python test to check instance type](https://stackoverflow.com/questions/33657463/python-test-to-check-instance-type/33657562)
+- [Using nose2](https://docs.nose2.io/en/latest/usage.html)
+- [What is the correct way to share package version with setup.py and the package?](https://stackoverflow.com/questions/17583443/what-is-the-correct-way-to-share-package-version-with-setup-py-and-the-package)
+- [5 common patterns to version your Python package](https://milkr.io/kfei/5-common-patterns-to-version-your-Python-package)

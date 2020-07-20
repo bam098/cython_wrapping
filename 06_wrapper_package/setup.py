@@ -4,6 +4,10 @@ import distutils.sysconfig
 from Cython.Build import cythonize
 from sys import platform
 
+version = {}
+with open("pymath/version.py") as fp:
+    exec(fp.read(), version)
+
 compile_args = ["-std=c++11"]
 link_args = []
 
@@ -33,7 +37,7 @@ pyvector_extension = Extension(
 
 setup(
     name="pymath",
-    version="0.0.1",
+    version=version['__version__'],
     author="bam098",
     author_email="bam098@example.com",
     description="A small math example package containing a C++ wrapper",
