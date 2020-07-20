@@ -35,5 +35,5 @@ cdef class PyVector:
         data = np.asarray(<double[:self.thisptr.get_length()]>c_data)
         return data;
 
-    def multiply(self, multiplier: np.double) -> np.ndarray[np.double]:
-        return self.thisptr.multiply(multiplier) 
+    def multiply(self, multiplier: np.double) -> None:
+        self.thisptr.multiply(multiplier) 
