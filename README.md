@@ -106,7 +106,6 @@ that wraps a C++ class. The package can be installed using pip.
 
 *ToDo:*
 
-- Make Cython dependency of created package optional
 - Add third-party libraries
 
 *References:*
@@ -129,3 +128,5 @@ that wraps a C++ class. The package can be installed using pip.
 - [Using nose2](https://docs.nose2.io/en/latest/usage.html)
 - [What is the correct way to share package version with setup.py and the package?](https://stackoverflow.com/questions/17583443/what-is-the-correct-way-to-share-package-version-with-setup-py-and-the-package)
 - [5 common patterns to version your Python package](https://milkr.io/kfei/5-common-patterns-to-version-your-Python-package)
+- [Distributing Cython modules](http://docs.cython.org/en/latest/src/userguide/source_files_and_compilation.html#distributing-cython-modules)
+- [How should I structure a Python package that contains Cython code](https://stackoverflow.com/questions/4505747/how-should-i-structure-a-python-package-that-contains-cython-code) 
