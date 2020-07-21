@@ -41,7 +41,7 @@ Wrapping a function in C++ that takes a string and prints that string on the con
 
 ## 03 C++ Array Wrapper
 
-Wrapping a function in C++ that takes an array and a number and multiplies that number to each 
+Wrapping a function in C++ that takes an array and a number and multiplies that number to each
 element of the array.
 
 *References:*
@@ -61,8 +61,8 @@ element of the array.
 
 ## 04 C++ Class Wrapper
 
-Wrapping a class in C++ that encapsulates an array and provides various functions to handle that 
-array (sum of its elements, getting array length, getting array itself, multiplying each element by 
+Wrapping a class in C++ that encapsulates an array and provides various functions to handle that
+array (sum of its elements, getting array length, getting array itself, multiplying each element by
 a constant).
 
 *References:*
@@ -82,8 +82,8 @@ a constant).
 
 ## 05 C++ MultiClass Wrapper
 
-Wrapping multiple class in C++. Again, we have one class that encapsulates an array. Furthermore, we 
-have another class that takes a constant as input and offers a function which takes a vector class 
+Wrapping multiple class in C++. Again, we have one class that encapsulates an array. Furthermore, we
+have another class that takes a constant as input and offers a function which takes a vector class
 and multiplies each element of the vector class by the constant.
 
 *References:*
@@ -99,14 +99,34 @@ and multiplies each element of the vector class by the constant.
 - [Python test to check instance type](https://stackoverflow.com/questions/33657463/python-test-to-check-instance-type)
 - [Using nose2](https://docs.nose2.io/en/latest/usage.html)
 
-## 06 Wrapper Package
+## 06 C++ Dependency Wrapper
 
-Creating a package called <code>pymath</code> containing a regular Python class and a Cython class 
+Wrapping a class in C++ that encapsulates an array and provides various functions to handle that
+array (sum of its elements, getting array length, getting array itself, multiplying the array with
+another array). Internally the C++ class uses OpenCV as external library.
+
+*References:*
+
+- [From C++ to Numpy](https://stackoverflow.com/questions/43021574/cast-c-array-into-numpy-array-cython-typed-memoryview-in-cython-code)
+- [From C++ to Numpy (old?)](http://gael-varoquaux.info/programming/cython-example-of-exposing-c-computed-arrays-in-python-without-data-copies.html)
+- [MemoryViews in Cython](http://docs.cython.org/en/latest/src/userguide/memoryviews.html)
+- [C++ in Cython](https://cython.readthedocs.io/en/latest/src/userguide/wrapping_CPlusPlus.html)
+- [How do I check the operating system in Python?](https://stackoverflow.com/questions/8220108/how-do-i-check-the-operating-system-in-python)
+- [sys.platform](https://docs.python.org/3/library/sys.html#sys.platform)
+- [GCC -fPIC option](https://stackoverflow.com/questions/5311515/gcc-fpic-option)
+- [cc1plus: warning: command line option “-Wstrict-prototypes” is valid for Ada/C/ObjC but not for C++](https://stackoverflow.com/questions/8106258/cc1plus-warning-command-line-option-wstrict-prototypes-is-valid-for-ada-c-o)
+- [Getting Started With Testing in Python](https://realpython.com/python-testing/)
+- [Best way to assert for numpy.array equality?](https://stackoverflow.com/questions/3302949/best-way-to-assert-for-numpy-array-equality)
+- [Python test to check instance type](https://stackoverflow.com/questions/33657463/python-test-to-check-instance-type)
+- [Using nose2](https://docs.nose2.io/en/latest/usage.html)
+- [How to convert C++ array to opencv Mat](https://stackoverflow.com/questions/44453088/how-to-convert-c-array-to-opencv-mat/44453382)
+- [dot product](https://answers.opencv.org/question/7198/dot-product/)
+- [Wrap a c++ class that uses Armadillo by Cython](https://stackoverflow.com/questions/62346784/wrap-a-c-class-that-uses-armadillo-by-cython)
+
+## 07 Wrapper Package
+
+Creating a package called <code>pymath</code> containing a regular Python class and a Cython class
 that wraps a C++ class. The package can be installed using pip.
-
-*ToDo:*
-
-- Add third-party libraries
 
 *References:*
 
@@ -129,4 +149,5 @@ that wraps a C++ class. The package can be installed using pip.
 - [What is the correct way to share package version with setup.py and the package?](https://stackoverflow.com/questions/17583443/what-is-the-correct-way-to-share-package-version-with-setup-py-and-the-package)
 - [5 common patterns to version your Python package](https://milkr.io/kfei/5-common-patterns-to-version-your-Python-package)
 - [Distributing Cython modules](http://docs.cython.org/en/latest/src/userguide/source_files_and_compilation.html#distributing-cython-modules)
-- [How should I structure a Python package that contains Cython code](https://stackoverflow.com/questions/4505747/how-should-i-structure-a-python-package-that-contains-cython-code) 
+- [How should I structure a Python package that contains Cython code](https://stackoverflow.com/questions/4505747/how-should-i-structure-a-python-package-that-contains-cython-code)
+- [Wrapping a DLL: C++ to Cython to Python](https://riptutorial.com/cython/example/11296/wrapping-a-dll--cplusplus-to-cython-to-python)

@@ -11,7 +11,7 @@ need to be adapted to the used version.
 
 Option A - To build the package without recompiling C++ and Cython source code:
 
-1. Make sure <code>pymath/pyvector.cpp</code> exits
+1. Make sure <code>pymath/pyvector.cpp</code> exits<br>
 
 2. Build <code>pymath</code> package<br>
    <code>make clean</code>  *(optional)*<br>

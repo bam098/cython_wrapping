@@ -2,7 +2,7 @@
 
 To build the wrapper:
 
-1. Build C library<br>
+1. Build C++ library<br>
     <code>cd lib</code><br>
     <code>make clean</code> *(optional)*<br>
     <code>make</code><br>

@@ -978,7 +978,7 @@ struct __pyx_MemviewEnum_obj;
 struct __pyx_memoryview_obj;
 struct __pyx_memoryviewslice_obj;
 
-/* "pymath/pyvector.pyx":13
+/* "pymath/pyvector.pyx":6
  * 
  * 
  * cdef class PyVector:             # <<<<<<<<<<<<<<
@@ -1829,6 +1829,8 @@ static PyObject *__pyx_memoryview_assign_item_from_object(struct __pyx_memoryvie
 static PyObject *__pyx_memoryviewslice_convert_item_to_object(struct __pyx_memoryviewslice_obj *__pyx_v_self, char *__pyx_v_itemp); /* proto*/
 static PyObject *__pyx_memoryviewslice_assign_item_from_object(struct __pyx_memoryviewslice_obj *__pyx_v_self, char *__pyx_v_itemp, PyObject *__pyx_v_value); /* proto*/
 
+/* Module declarations from 'pymath' */
+
 /* Module declarations from 'cython.view' */
 static struct __pyx_array_obj *__pyx_array_new(PyObject *, Py_ssize_t, char *, char *, char *); /*proto*/
 
@@ -2187,7 +2189,7 @@ static PyObject *__pyx_tuple__31;
 static PyObject *__pyx_codeobj__32;
 /* Late includes */
 
-/* "pymath/pyvector.pyx":17
+/* "pymath/pyvector.pyx":10
  *     cdef double[::1] data_memview
  * 
  *     def __cinit__(self, data: np.ndarray[np.double]) -> None:             # <<<<<<<<<<<<<<
@@ -2224,7 +2226,7 @@ static int __pyx_pw_6pymath_8pyvector_8PyVector_1__cinit__(PyObject *__pyx_v_sel
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 17, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 10, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 1) {
       goto __pyx_L5_argtuple_error;
@@ -2235,7 +2237,7 @@ static int __pyx_pw_6pymath_8pyvector_8PyVector_1__cinit__(PyObject *__pyx_v_sel
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 17, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 10, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pymath.pyvector.PyVector.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2267,33 +2269,33 @@ static int __pyx_pf_6pymath_8pyvector_8PyVector___cinit__(struct __pyx_obj_6pyma
   __Pyx_RefNannySetupContext("__cinit__", 0);
   __Pyx_INCREF(__pyx_v_data);
 
-  /* "pymath/pyvector.pyx":18
+  /* "pymath/pyvector.pyx":11
  * 
  *     def __cinit__(self, data: np.ndarray[np.double]) -> None:
  *         if not data.flags['C_CONTIGUOUS']:             # <<<<<<<<<<<<<<
  *             data = np.ascontiguousarray(data)
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_data, __pyx_n_s_flags); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 18, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_data, __pyx_n_s_flags); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_Dict_GetItem(__pyx_t_1, __pyx_n_u_C_CONTIGUOUS); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 18, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Dict_GetItem(__pyx_t_1, __pyx_n_u_C_CONTIGUOUS); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(1, 18, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(1, 11, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_4 = ((!__pyx_t_3) != 0);
   if (__pyx_t_4) {
 
-    /* "pymath/pyvector.pyx":19
+    /* "pymath/pyvector.pyx":12
  *     def __cinit__(self, data: np.ndarray[np.double]) -> None:
  *         if not data.flags['C_CONTIGUOUS']:
  *             data = np.ascontiguousarray(data)             # <<<<<<<<<<<<<<
  * 
  *         self.data_memview = np.array(data, copy=True)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 19, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 12, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_ascontiguousarray); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 19, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_ascontiguousarray); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 12, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_t_1 = NULL;
@@ -2308,13 +2310,13 @@ static int __pyx_pf_6pymath_8pyvector_8PyVector___cinit__(struct __pyx_obj_6pyma
     }
     __pyx_t_2 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_1, __pyx_v_data) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_data);
     __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 19, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 12, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF_SET(__pyx_v_data, __pyx_t_2);
     __pyx_t_2 = 0;
 
-    /* "pymath/pyvector.pyx":18
+    /* "pymath/pyvector.pyx":11
  * 
  *     def __cinit__(self, data: np.ndarray[np.double]) -> None:
  *         if not data.flags['C_CONTIGUOUS']:             # <<<<<<<<<<<<<<
@@ -2323,46 +2325,46 @@ static int __pyx_pf_6pymath_8pyvector_8PyVector___cinit__(struct __pyx_obj_6pyma
  */
   }
 
-  /* "pymath/pyvector.pyx":21
+  /* "pymath/pyvector.pyx":14
  *             data = np.ascontiguousarray(data)
  * 
  *         self.data_memview = np.array(data, copy=True)             # <<<<<<<<<<<<<<
  *         self.thisptr = new Vector(&self.data_memview[0], self.data_memview.shape[0])
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 21, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_array); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 21, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_array); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 21, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_data);
   __Pyx_GIVEREF(__pyx_v_data);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_v_data);
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 21, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_copy, Py_True) < 0) __PYX_ERR(1, 21, __pyx_L1_error)
-  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 21, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_copy, Py_True) < 0) __PYX_ERR(1, 14, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_t_6, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(1, 21, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_t_6, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(1, 14, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->data_memview, 0);
   __pyx_v_self->data_memview = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "pymath/pyvector.pyx":22
+  /* "pymath/pyvector.pyx":15
  * 
  *         self.data_memview = np.array(data, copy=True)
  *         self.thisptr = new Vector(&self.data_memview[0], self.data_memview.shape[0])             # <<<<<<<<<<<<<<
  * 
  *     def __dealloc__(self) -> None:
  */
-  if (unlikely(!__pyx_v_self->data_memview.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(1, 22, __pyx_L1_error)}
+  if (unlikely(!__pyx_v_self->data_memview.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(1, 15, __pyx_L1_error)}
   __pyx_t_8 = 0;
   __pyx_t_9 = -1;
   if (__pyx_t_8 < 0) {
@@ -2371,18 +2373,18 @@ static int __pyx_pf_6pymath_8pyvector_8PyVector___cinit__(struct __pyx_obj_6pyma
   } else if (unlikely(__pyx_t_8 >= __pyx_v_self->data_memview.shape[0])) __pyx_t_9 = 0;
   if (unlikely(__pyx_t_9 != -1)) {
     __Pyx_RaiseBufferIndexError(__pyx_t_9);
-    __PYX_ERR(1, 22, __pyx_L1_error)
+    __PYX_ERR(1, 15, __pyx_L1_error)
   }
-  if (unlikely(!__pyx_v_self->data_memview.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(1, 22, __pyx_L1_error)}
+  if (unlikely(!__pyx_v_self->data_memview.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(1, 15, __pyx_L1_error)}
   try {
     __pyx_t_10 = new Vector((&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->data_memview.data) + __pyx_t_8)) )))), (__pyx_v_self->data_memview.shape[0]));
   } catch(...) {
     __Pyx_CppExn2PyErr();
-    __PYX_ERR(1, 22, __pyx_L1_error)
+    __PYX_ERR(1, 15, __pyx_L1_error)
   }
   __pyx_v_self->thisptr = __pyx_t_10;
 
-  /* "pymath/pyvector.pyx":17
+  /* "pymath/pyvector.pyx":10
  *     cdef double[::1] data_memview
  * 
  *     def __cinit__(self, data: np.ndarray[np.double]) -> None:             # <<<<<<<<<<<<<<
@@ -2407,7 +2409,7 @@ static int __pyx_pf_6pymath_8pyvector_8PyVector___cinit__(struct __pyx_obj_6pyma
   return __pyx_r;
 }
 
-/* "pymath/pyvector.pyx":24
+/* "pymath/pyvector.pyx":17
  *         self.thisptr = new Vector(&self.data_memview[0], self.data_memview.shape[0])
  * 
  *     def __dealloc__(self) -> None:             # <<<<<<<<<<<<<<
@@ -2430,7 +2432,7 @@ static void __pyx_pf_6pymath_8pyvector_8PyVector_2__dealloc__(struct __pyx_obj_6
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "pymath/pyvector.pyx":25
+  /* "pymath/pyvector.pyx":18
  * 
  *     def __dealloc__(self) -> None:
  *         del self.thisptr             # <<<<<<<<<<<<<<
@@ -2439,7 +2441,7 @@ static void __pyx_pf_6pymath_8pyvector_8PyVector_2__dealloc__(struct __pyx_obj_6
  */
   delete __pyx_v_self->thisptr;
 
-  /* "pymath/pyvector.pyx":24
+  /* "pymath/pyvector.pyx":17
  *         self.thisptr = new Vector(&self.data_memview[0], self.data_memview.shape[0])
  * 
  *     def __dealloc__(self) -> None:             # <<<<<<<<<<<<<<
@@ -2451,7 +2453,7 @@ static void __pyx_pf_6pymath_8pyvector_8PyVector_2__dealloc__(struct __pyx_obj_6
   __Pyx_RefNannyFinishContext();
 }
 
-/* "pymath/pyvector.pyx":27
+/* "pymath/pyvector.pyx":20
  *         del self.thisptr
  * 
  *     def sum(self) -> np.double:             # <<<<<<<<<<<<<<
@@ -2481,7 +2483,7 @@ static PyObject *__pyx_pf_6pymath_8pyvector_8PyVector_4sum(struct __pyx_obj_6pym
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("sum", 0);
 
-  /* "pymath/pyvector.pyx":28
+  /* "pymath/pyvector.pyx":21
  * 
  *     def sum(self) -> np.double:
  *         return self.thisptr.sum()             # <<<<<<<<<<<<<<
@@ -2489,13 +2491,13 @@ static PyObject *__pyx_pf_6pymath_8pyvector_8PyVector_4sum(struct __pyx_obj_6pym
  *     def get_length(self) -> int:
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->thisptr->sum()); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 28, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->thisptr->sum()); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 21, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pymath/pyvector.pyx":27
+  /* "pymath/pyvector.pyx":20
  *         del self.thisptr
  * 
  *     def sum(self) -> np.double:             # <<<<<<<<<<<<<<
@@ -2514,7 +2516,7 @@ static PyObject *__pyx_pf_6pymath_8pyvector_8PyVector_4sum(struct __pyx_obj_6pym
   return __pyx_r;
 }
 
-/* "pymath/pyvector.pyx":30
+/* "pymath/pyvector.pyx":23
  *         return self.thisptr.sum()
  * 
  *     def get_length(self) -> int:             # <<<<<<<<<<<<<<
@@ -2544,7 +2546,7 @@ static PyObject *__pyx_pf_6pymath_8pyvector_8PyVector_6get_length(struct __pyx_o
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_length", 0);
 
-  /* "pymath/pyvector.pyx":31
+  /* "pymath/pyvector.pyx":24
  * 
  *     def get_length(self) -> int:
  *         return self.thisptr.get_length();             # <<<<<<<<<<<<<<
@@ -2552,13 +2554,13 @@ static PyObject *__pyx_pf_6pymath_8pyvector_8PyVector_6get_length(struct __pyx_o
  *     def get_data(self) -> np.ndarray[np.double]:
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->thisptr->get_length()); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 31, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_unsigned_int(__pyx_v_self->thisptr->get_length()); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 24, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pymath/pyvector.pyx":30
+  /* "pymath/pyvector.pyx":23
  *         return self.thisptr.sum()
  * 
  *     def get_length(self) -> int:             # <<<<<<<<<<<<<<
@@ -2577,7 +2579,7 @@ static PyObject *__pyx_pf_6pymath_8pyvector_8PyVector_6get_length(struct __pyx_o
   return __pyx_r;
 }
 
-/* "pymath/pyvector.pyx":33
+/* "pymath/pyvector.pyx":26
  *         return self.thisptr.get_length();
  * 
  *     def get_data(self) -> np.ndarray[np.double]:             # <<<<<<<<<<<<<<
@@ -2613,7 +2615,7 @@ static PyObject *__pyx_pf_6pymath_8pyvector_8PyVector_8get_data(struct __pyx_obj
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_data", 0);
 
-  /* "pymath/pyvector.pyx":34
+  /* "pymath/pyvector.pyx":27
  * 
  *     def get_data(self) -> np.ndarray[np.double]:
  *         cdef double* c_data = self.thisptr.get_data();             # <<<<<<<<<<<<<<
@@ -2622,28 +2624,28 @@ static PyObject *__pyx_pf_6pymath_8pyvector_8PyVector_8get_data(struct __pyx_obj
  */
   __pyx_v_c_data = __pyx_v_self->thisptr->get_data();
 
-  /* "pymath/pyvector.pyx":35
+  /* "pymath/pyvector.pyx":28
  *     def get_data(self) -> np.ndarray[np.double]:
  *         cdef double* c_data = self.thisptr.get_data();
  *         data = np.asarray(<double[:self.thisptr.get_length()]>c_data)             # <<<<<<<<<<<<<<
  *         return data;
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 35, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_asarray); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 35, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_asarray); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (!__pyx_v_c_data) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 35, __pyx_L1_error)
+    __PYX_ERR(1, 28, __pyx_L1_error)
   }
-  __pyx_t_5 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 35, __pyx_L1_error)
+  __pyx_t_5 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_2 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)__pyx_v_self->thisptr->get_length())); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 35, __pyx_L1_error)
+  __pyx_t_2 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)__pyx_v_self->thisptr->get_length())); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_4 = __pyx_array_new(__pyx_t_2, sizeof(double), PyBytes_AS_STRING(__pyx_t_5), (char *) "c", (char *) __pyx_v_c_data);
-  if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 35, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -2660,13 +2662,13 @@ static PyObject *__pyx_pf_6pymath_8pyvector_8PyVector_8get_data(struct __pyx_obj
   __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_5, ((PyObject *)__pyx_t_4)) : __Pyx_PyObject_CallOneArg(__pyx_t_3, ((PyObject *)__pyx_t_4));
   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(((PyObject *)__pyx_t_4)); __pyx_t_4 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 35, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_data = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "pymath/pyvector.pyx":36
+  /* "pymath/pyvector.pyx":29
  *         cdef double* c_data = self.thisptr.get_data();
  *         data = np.asarray(<double[:self.thisptr.get_length()]>c_data)
  *         return data;             # <<<<<<<<<<<<<<
@@ -2678,7 +2680,7 @@ static PyObject *__pyx_pf_6pymath_8pyvector_8PyVector_8get_data(struct __pyx_obj
   __pyx_r = __pyx_v_data;
   goto __pyx_L0;
 
-  /* "pymath/pyvector.pyx":33
+  /* "pymath/pyvector.pyx":26
  *         return self.thisptr.get_length();
  * 
  *     def get_data(self) -> np.ndarray[np.double]:             # <<<<<<<<<<<<<<
@@ -2702,7 +2704,7 @@ static PyObject *__pyx_pf_6pymath_8pyvector_8PyVector_8get_data(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "pymath/pyvector.pyx":38
+/* "pymath/pyvector.pyx":31
  *         return data;
  * 
  *     def multiply(self, multiplier: np.double) -> None:             # <<<<<<<<<<<<<<
@@ -2731,15 +2733,15 @@ static PyObject *__pyx_pf_6pymath_8pyvector_8PyVector_10multiply(struct __pyx_ob
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("multiply", 0);
 
-  /* "pymath/pyvector.pyx":39
+  /* "pymath/pyvector.pyx":32
  * 
  *     def multiply(self, multiplier: np.double) -> None:
  *         self.thisptr.multiply(multiplier)             # <<<<<<<<<<<<<<
  */
-  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_multiplier); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 39, __pyx_L1_error)
+  __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_multiplier); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 32, __pyx_L1_error)
   __pyx_v_self->thisptr->multiply(__pyx_t_1);
 
-  /* "pymath/pyvector.pyx":38
+  /* "pymath/pyvector.pyx":31
  *         return data;
  * 
  *     def multiply(self, multiplier: np.double) -> None:             # <<<<<<<<<<<<<<
@@ -17576,15 +17578,15 @@ static int __Pyx_modinit_type_init_code(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__Pyx_modinit_type_init_code", 0);
   /*--- Type init code ---*/
-  if (PyType_Ready(&__pyx_type_6pymath_8pyvector_PyVector) < 0) __PYX_ERR(1, 13, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_6pymath_8pyvector_PyVector) < 0) __PYX_ERR(1, 6, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_6pymath_8pyvector_PyVector.tp_print = 0;
   #endif
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_6pymath_8pyvector_PyVector.tp_dictoffset && __pyx_type_6pymath_8pyvector_PyVector.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_6pymath_8pyvector_PyVector.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PyVector, (PyObject *)&__pyx_type_6pymath_8pyvector_PyVector) < 0) __PYX_ERR(1, 13, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6pymath_8pyvector_PyVector) < 0) __PYX_ERR(1, 13, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PyVector, (PyObject *)&__pyx_type_6pymath_8pyvector_PyVector) < 0) __PYX_ERR(1, 6, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6pymath_8pyvector_PyVector) < 0) __PYX_ERR(1, 6, __pyx_L1_error)
   __pyx_ptype_6pymath_8pyvector_PyVector = &__pyx_type_6pymath_8pyvector_PyVector;
   __pyx_vtabptr_array = &__pyx_vtable_array;
   __pyx_vtable_array.get_memview = (PyObject *(*)(struct __pyx_array_obj *))__pyx_array_get_memview;
@@ -17871,21 +17873,22 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   #endif
 
-  /* "pymath/pyvector.pyx":2
+  /* "pymath/pyvector.pyx":3
+ * cimport pymath.pyvector
  * from cython cimport view
  * import numpy as np             # <<<<<<<<<<<<<<
  * 
- * cdef extern from "Vector.hpp":
+ * 
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 2, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 3, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(1, 2, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(1, 3, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "pymath/pyvector.pyx":1
- * from cython cimport view             # <<<<<<<<<<<<<<
+ * cimport pymath.pyvector             # <<<<<<<<<<<<<<
+ * from cython cimport view
  * import numpy as np
- * 
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
