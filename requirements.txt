@@ -1,5 +1,5 @@
 numpy==1.22.0
 cython==0.29.19
-setuptools==65.5.1
+setuptools==70.0.0
 wheel==0.38.1
 nose2==0.9.2
